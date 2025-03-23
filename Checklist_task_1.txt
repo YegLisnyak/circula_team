@@ -1,0 +1,88 @@
+
+======================
+TASK 1
+======================
+
+===========
+Login Functionality Test Checklist
+===========
+Make sure all aspects of quality standards are covered, as per ISO/IEC 25010.
+This coverage includes functional, accessibility, security, compatibility and others types of testing.
+
+1. UI and Design Verification
+- Verify that the Login page follows the correct design specifications
+- Verify the username/email and password fields are correctly labeled
+- Verify the visibility toggle for the password (e.g., eye icon to show/hide password).
+- Verify that the forgot password link is present and redirects to the password reset page.
+- Verify that the sign-up link is present and redirects correctly.
+- Verify that the SSO link is present and redirects correctly.
+- Verify that the "Sign up with Google account" link is present and redirects correctly.
+- Verify that the "Start a free trial" link is present and redirects correctly.
+
+2️. Functional testing
+- Verify that user can successfully log in with valid credentials.
+- Verify that user can successfully log using different login options: SSO, Google account
+- Verify that unauthorized user is not able to log in.
+- Verify that the Login API returns correct response codes
+- Verify that incorrect credentials display proper error messages ("Either your Username/e-mail or your password is wrong. Please double-check.").
+- Verify that after login, the user is redirected to the correct page (e.g., homepage).
+- Verify login with incorrect username/email and password.
+- Verify login with an empty username field and a valid password.
+- Verify login with a valid username but an empty password.
+- Verify login with both fields empty.
+- Verify login with special characters in the username or password (if allowed/restricted).
+- Verify login after changing the password (ensure the old password doesn’t work).
+- Verify login when the user is already logged in on another device (if not allowed, ensure proper handling).
+
+3. Security
+- Verify that the API does not expose sensitive user data (passwords, session tokens).
+- Verify that login does not allow SQL injection, XSS, or CSRF attacks.
+- Verify that the password field is masked and does not display plain text by default.
+- Verify that password reset functionality does not expose user information (e.g.,"User does not exist").
+- Verify that login credentials are not stored in the browser's auto-fill memory.
+
+4. Usability and accessability testung
+- Verify that the login form is keyboard accessible (using Tab key).
+- Verify that error messages are clear, user-friendly, and not overly technical.
+- Verify that login works on different screen sizes.
+
+5. Other
+- Verify login response can be performed under 500ms.
+- Verify login in different browsers.
+- Verify linin on different devices.
+- Verify login on different OS. 
+
+
+===========
+Signup functionality checklist
+===========
+
+1. Username field
+- Verify valid email format.
+- Verify allowd special symbols.
+- Verify invalid email format (no circula domain name, starting @ symbol, no @ symbol, etc.)
+- Verify email field border has rgb(234, 18, 11) color when invalid value.
+
+2. Passwrod field: 
+
+- Verify password length validation of minimum of 8 characters is.
+- Verify password strength validation (Min. 8 characters, at least 1 letter, at least 1 number).
+- Verify empty field
+- Verify visibility toggle to view password.
+- Verify password field border has rgb(234, 18, 11) color when invalid value.
+- Verify alert appeared when password doesn't meet requirements.
+
+- Click on "Terms and Conditions" checkbox and verify state is changed to checked.
+- Click on "I'm happy to get occasional product updates" checkbox and verify state is changed to checked.
+- Verify "Try for free" button is disabled if work email, password and "Terms and Conditions" checkbox are not checked/sutisfied.
+- Verify "Try for free" button is enabled if work email, password and "Terms and Conditions" checkbox are checked/sutisfied.
+
+- Ensure user receives a confirmation email upon successful signup.
+- Verify that the user is redirected to the correct page after successful signup.
+- Verify that the user data is correctly stored in the database.
+
+- Verify signup response can be performed under 500ms.
+- Verify signup in different browsers.
+- Verify signup on different devices.
+- Verify signup on different OS. 
+

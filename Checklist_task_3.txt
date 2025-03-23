@@ -1,0 +1,24 @@
+
+======================
+TASK 3
+======================
+
+Verify that the old password field is required before submitting the form.
+Verify that the new password field is required before submitting the form.
+Verify that the new password must be at least 8 characters (validation triggers otherwise).
+Verify that the new password must contain at least one numerical character (validation triggers otherwise).
+Verify that the new password must contain at least one letter (validation triggers otherwise).
+Verify that the CTA (Change Password button) remains disabled until both passwords meet the criteria.
+Verify that clicking the CTA triggers validation for the old password.
+Verify that entering an incorrect old password displays the correct error message as per design.
+Verify that entering a correct old password but an invalid new password (not meeting criteria) keeps the CTA disabled.
+Verify that entering a valid old and new password enables the CTA.
+Verify that upon successfully changing the password, a success message is shown and the user is navigated to the settings page.
+
+Verify that using Face ID or Touch ID for autofill correctly populates the old password field.
+Verify that switching between apps (e.g., password manager) does not reset entered passwords.
+Verify that entering an incorrect old password does not change the password and displays an error.
+Verify that submitting the form multiple times does not create duplicate requests.
+
+- Verify that behavior is consistent accross 3 latest versions.
+- Verify that behavior is consistent older verions(e.g., iOS v11)

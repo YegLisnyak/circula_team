@@ -1,0 +1,12 @@
+{
+  "name": "qa_challenge",
+  "version": "1.0.0",
+  "description": "home assignment for qa analyst position",
+  "main": "index.js",
+  "scripts": {},
+  "author": "yegor lisnyak",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.33.0"
+  }
+}

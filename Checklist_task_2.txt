@@ -1,0 +1,46 @@
+
+======================
+TASK 2
+======================
+
+Character counter & validation checklist:
+
+- Verify that at exactly 250 characters the character counter does not appear.
+- Verify that at exactly 499 characters the character counter does not appear.
+- Verify that at exactly 500 characters, the character counter appears.
+- Verify that at exactly 777 characters, the character counter display correct value.
+- Verify that at 999 characters, the input field remains normal and the CTA is enabled.
+- Verify that at 1000 characters, the input field remains editable.
+- Verify that the CTA button is enabled when the text is below or equal to 1000 characters.
+- Verify that at 1001 characters, the error state is triggered.
+- Verify that the CTA button is disabled when the text exceeds 1000 characters.
+
+Android-specific:
+- Verify that the character limit of 1000 is enforced when using gesture typing (swipe input).
+- Verify that the character limit of 1000 is enforced when using auto-suggest or predictive text.
+
+Copy/pasting: 
+- Verify that copy-pasting exactly 1000 characters does not trigger an error.
+- Verify that copy-pasting 1001+ characters immediately triggers the error state and disables the CTA.
+- Verify that copy-pasting a mix of spaces, tabs, and newlines does not affect validation inconsistently.
+- Verify that pasting an extremely large text block (5000+ characters) only first 1000 is entered to the field and validation is displayed.
+
+- Verify that the character counter updates dynamically as the user types.
+- Verify that when the character count exceeds 1000, the input field enters an error state (e.g., red border).
+- Verify that when the character count returns below 1000, the error state is removed, and the input field returns to normal styling.
+- Verify that suggestions are visible when the text length is 100 characters or less.
+- Verify that suggestions disappear when the text length exceeds 100 characters.
+- Verify that deleting characters back below the limits restores the correct behavior (counter visibility, error state removal, CTA activation).
+
+Security:
+- Verify that pasting an HTML snippet (e.g., <script>alert('XSS')</script>) is treated as plain text and does not cause security issues.
+
+Localization: 
+- Verify that text input correctly supports non-Latin scripts (e.g., Arabic, Chinese, Cyrillic) and counts characters accurately.
+- Verify that right-to-left (RTL) languages (e.g., Arabic, Hebrew) display the character counter and error messages correctly.
+
+Compatibility: 
+- Verify that behavior is consistent accross 3 latest versions.
+- Verify that behavior is consistent older verions.
+
+
